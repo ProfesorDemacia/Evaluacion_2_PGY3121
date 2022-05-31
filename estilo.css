@@ -1,5 +1,35 @@
-.menu{
+nav{
     background-color: green;
     color: aliceblue;
     text-decoration: none;
+    padding: 5px;
+    width: 100%;
+}
+.centro{
+    text-align: center;
+}
+.borrar_formato{
+    text-decoration: none;
+}
+footer{
+    background-color: green;
+    width: 100%;
+
+}
+
+body{
+    background-color: lightblue;
+}
+p{
+    text-align: justify;
+    color: darkgreen;
+}
+
+.titulo{
+    color: seashell;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h6{
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
