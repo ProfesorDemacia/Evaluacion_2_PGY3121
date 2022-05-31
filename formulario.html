@@ -47,44 +47,59 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="txt_nombre">Nombre</span>
-                    <input type="text" class="form-control" placeholder="Escriba aca su nombre..." aria-describedby="txt_nombre" required>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="txt_nombre">Apellido</span>
-                    <input type="text" class="form-control" placeholder="Escriba aca su apellido..." aria-describedby="txt_apellido" required>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="txt_rut">Rut</span>
-                    <input type="text" class="form-control" placeholder="Escriba aca su rut..." aria-describedby="txt_rut" required>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="txt_correo">Correo Electronico</span>
-                    <input type="text" class="form-control" placeholder="Escriba aca su correo..." aria-describedby="txt_correo">
-                </div>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="sel_genero">Genero</label>
-                    <select class="form-select" id="sel_genero" required>
-                        <option selected>Seleccione...</option>
-                        <option value="1">Masculino</option>
-                        <option value="2">Femenino</option>
-                        <option value="3">Prefiero no mencionarlo</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="sel_pais">Pais de Nacimiento</label>
-                    <select class="form-select" id="sel_pais" required>
-                        <option selected>Seleccione...</option>
-                        <option value="1">Chile</option>
-                        <option value="2">Argentina</option>
-                        <option value="3">Venezuela</option>
-                        <option value="4">Peru</option>
-                        <option value="5">Bolivia</option>
-                        <option value="6">Uruguay</option>
-                        <option value="7">Otro</option>
-                    </select>
-                </div>
+                <form action="#" method="post" name="formulario">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="txt_nombre">Nombre</span>
+                        <input type="text" class="form-control" placeholder="Escriba aca su nombre..." aria-describedby="txt_nombre" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="txt_nombre">Apellido</span>
+                        <input type="text" class="form-control" placeholder="Escriba aca su apellido..." aria-describedby="txt_apellido" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="txt_rut">Rut</span>
+                        <input type="text" class="form-control" placeholder="Escriba aca su rut..." aria-describedby="txt_rut" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="txt_numero">+569</span>
+                        <input type="number" class="form-control" placeholder="Escriba aca su numero de celular..." aria-describedby="txt_numero" required>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="txt_correo">Correo Electronico</span>
+                        <input type="text" class="form-control" placeholder="Escriba aca su correo..." aria-describedby="txt_correo">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="sel_region">Region de residencia</label>
+                        <select class="form-select" id="sel_region" required>
+                            <option selected>Seleccione...</option>
+                            <option value="1">Region metropolitana</option>
+                            <option value="2">Region de Valparaiso</option>
+                            <option value="3">Region de Coquimbo</option>
+                            <option value="4">Region de Atacama</option>
+                            <option value="5">Region de Maule</option>
+                            <option value="6">Region de la Araucania</option>
+                            <option value="7">Region de los Lagos</option>
+                        </select>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sel_genero" id="sel_genero1" value="opcion1">
+                        <label class="form-check-label" for="sel_genero1">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sel_genero" id="sel_genero2" value="opcion2">
+                        <label class="form-check-label" for="sel_genero2">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sel_genero" id="sel_genero3" value="opcion3">
+                        <label class="form-check-label" for="sel_genero3">Prefiero no mencionarlo</label>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="javascript:void(validar())">Enviar</button>
+                        <button type="button" class="btn btn-danger">Limpiar</button>
+                        
+                    </div>
+                </form>
                 
 
 
