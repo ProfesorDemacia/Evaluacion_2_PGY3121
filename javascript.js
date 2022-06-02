@@ -1,4 +1,18 @@
 
+$(document).ready(function(){
+
+    $("#form_info").hide();
+    $("#ocultar").click(function(){
+
+        $("#form_info").hide();
+
+    });
+
+    $("#mostrar").click(function(){
+
+        $("#form_info").show()
+    });
+});
 
 function validacion() {
 
@@ -76,6 +90,9 @@ function validacion() {
         alert("Debe seleccionar un genero")
         return false
     } 
+
+    alert("Su formulario ha sido ingresado con exito!")
+
     let transferencia_tabla = document.getElementById('tabla_mostrar').insertRow(1);
     let nueva_fila1 = transferencia_tabla.insertCell(0);
     let nueva_fila2 = transferencia_tabla.insertCell(1);
