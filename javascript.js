@@ -91,6 +91,8 @@ function validacion() {
         return false
     } 
 
+
+    limpiar();
     alert("Su formulario ha sido ingresado con exito!")
 
     let transferencia_tabla = document.getElementById('tabla_mostrar').insertRow(1);
