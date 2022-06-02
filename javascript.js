@@ -36,7 +36,7 @@ function validacion() {
         document.form_contact.txt_apellido.focus()
         return false
     }
-    if (correo.indexOf('@')<0 || correo.indexOf('.')<0 && correo.length<3)
+    if (correo.indexOf('@')<0 || correo.indexOf('.')<0 || correo.length<3)
     {
         alert("Debe ingresar un correo valido ej: nombre@empresa.com")
         document.form_contact.txt_correo.focus()
