@@ -1,3 +1,5 @@
+
+
 function validacion() {
 
     var nombre = document.form_contact.txt_nombre.value
@@ -6,10 +8,9 @@ function validacion() {
     var telefono = document.form_contact.txt_numero.value
     var correo = document.form_contact.txt_correo.value
     var region = document.getElementById('sel_region').value
-    var checked = 'no';
-    var genero1 = document.getElementById('sel_genero1').value
-    var genero2 = document.getElementById('sel_genero2').value
-    var genero3 = document.getElementById('sel_genero3').value
+    var checked = 'no'
+    var genero = document.form_contact.sel_genero.value
+    
 
     if (rut.length>10 || rut.length<9)
     {
@@ -53,6 +54,12 @@ function validacion() {
         document.form_contact.txt_numero.focus()
         return false
     }
+    if ((telefono.toString()).indexOf('+') >0|| (telefono.toString()).indexOf('-')>0)
+    {
+        alert("El numero no debe contener signo mas o guion")
+        document.form_contact.txt_numero.focus()
+        return false
+    }
     if (region == '0')
     {
         alert("Debe seleccionar una Región")
@@ -69,6 +76,22 @@ function validacion() {
         alert("Debe seleccionar un genero")
         return false
     } 
+    let transferencia_tabla = document.getElementById('tabla_mostrar').insertRow(1);
+    let nueva_fila1 = transferencia_tabla.insertCell(0);
+    let nueva_fila2 = transferencia_tabla.insertCell(1);
+    let nueva_fila3 = transferencia_tabla.insertCell(2);
+    let nueva_fila4 = transferencia_tabla.insertCell(3);
+    let nueva_fila5 = transferencia_tabla.insertCell(4);
+    let nueva_fila6 = transferencia_tabla.insertCell(5);
+    let nueva_fila7 = transferencia_tabla.insertCell(6);
+
+    nueva_fila1.innerHTML = nombre;
+    nueva_fila2.innerHTML = apellido;
+    nueva_fila3.innerHTML = rut;
+    nueva_fila4.innerHTML = telefono;
+    nueva_fila5.innerHTML = correo;
+    nueva_fila6.innerHTML = region;
+    nueva_fila7.innerHTML = genero;
 
 }
 

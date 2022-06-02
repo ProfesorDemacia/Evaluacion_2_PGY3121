@@ -33,3 +33,21 @@ h6{
     color: azure;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.formulario{
+    background-color: green;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 0px auto;
+}
+.margen_arriba{
+    margin-top: 50px;
+}
+.informacion{
+    border-radius: 15px;
+    width: 60%;
+    margin: 0% auto;
+}
+.centro2{
+    display: block;
+
+}
